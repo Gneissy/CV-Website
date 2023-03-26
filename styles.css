@@ -1,0 +1,694 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+/* ------------------ on Refactor, use these: ------------------*/
+
+/* Reusable classes */
+.flex-box-row {
+  display: flex;
+}
+
+.flex-box-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-box-row-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-box-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/* ------------------ Project Section ------------------ */
+#projects {
+  /* temp */
+  background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
+}
+
+#projects .container {
+  width: 75%;
+}
+
+/* @@@ Left container @@@ */
+.projects-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% 0 5%;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 5%;
+  font-weight: 700;
+  color: rgba(0, 205, 172, 1);
+}
+
+.project-name--stack-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.project-name-box {
+  display: flex;
+  justify-content: center;
+  /* Maybe flex-start is better? */
+  align-items: center;
+}
+
+.project-stack-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.project-buttons-box {
+  display: flex;
+  justify-content: center;
+  /* Maybe space-evenly is better */
+  align-items: center;
+  margin: 5% 0 5%;
+}
+
+.project-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.project-detail {
+  margin-bottom: 5%;
+}
+
+/* @@@ Right Container @@@ */
+.projects-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Maybe flex-start is better */
+  align-items: center;
+}
+
+.project-video-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.project-video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project-buttons-box {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+}
+
+.project-redirect-button {
+  width: 30%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #00cdac;
+  padding: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.project-redirect-button:hover {
+  color: #64E3D6;
+}
+
+
+
+
+
+
+/* |------------------ Footer Section  ------------------| */
+footer {
+  background-color: #343434;
+  padding: 5% 0 2%;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-contact-nav {
+  color: #c7f2ff;
+}
+
+.footer-contact-nav:hover {
+  color: #11999E;
+}
+
+footer div a {
+  transition: transform .25s ease-out;
+}
+
+footer div a:hover {
+  transform: scale(1.3);
+}
+
+footer .footer-text-box {
+  display: flex;
+  min-height: 80px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-text {
+  color: #c7f2ff;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+/* |------------------ Contact Me Section  ------------------| */
+#contact-me {
+  height: 60svh;
+}
+
+#contact-me .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5%;
+  font-weight: 700;
+  color: rgba(0, 205, 172, 1);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-me input,
+#contact-me textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px #00cdac solid;
+  min-width: 40svw;
+  transition: all 1s ease-out;
+  caret-color: #00cdac;
+}
+
+/* To get rid of autocomplete input background color */
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
+/* @@@@@@@@@@@ TEMP Try to fix underline of input TEMP @@@@@@@@@@@ */
+input {
+  text-decoration: none;
+  outline: none;
+}
+
+/* @@@@@@@@@@@ TEMP Try to fix underline of input TEMP @@@@@@@@@@@ */
+.input-container {
+  /* To make absolute positioning on label */
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+}
+
+.input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid red;
+}
+
+/* Little animation on focus */
+.input-container input:focus+label,
+.input-container textarea:focus+label,
+/* Don't transition back if input is valid */
+.input-container input:valid+label,
+.input-container textarea:valid+label {
+  top: -12px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+[type="email"] {
+  color: #00cdac;
+}
+
+/* If input is invalid */
+.input-container input:invalid {
+  color: #ff4c68;
+  opacity: 0.25;
+}
+
+.submit-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn {
+  width: 30%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #00cdac;
+  padding: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.submit-btn:hover {
+  color: #64E3D6;
+}
+
+#message-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #00cdac;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/* |------------------ Skills Section  ------------------| */
+#skills {
+  background-color: lightyellow;
+}
+
+#skills .container {
+  width: 50%;
+  padding-top: 10%;
+}
+
+#skills .container h1 {
+  text-align: center;
+}
+.skills-title{
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 5%;
+  font-weight: 700;
+  color: rgba(0, 205, 172, 1);
+}
+.skills-container {
+  min-height: 600px;
+  margin: 10% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 70px;
+  /* Maybe center is better */
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.skill-box {
+  /* width: 150px;
+  height: 150px; */
+  opacity: .2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: opacity 1s ease;
+  /* margin: 16px; */
+}
+
+.skills-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill-img {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  /* transition: all 0.5s ease-out; */
+}
+
+.skill-text {
+  text-align: center;
+}
+h5.skills-text{
+  margin-top: 10%;
+  font-style: italic;
+  color: #00cdac;
+}
+.skill-box--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skill-box--frontend,
+.skill-box--tool,
+.skill-box--backend{
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+.skills-buttons-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-showcase-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-img__top-div {
+  background-color: blue;
+}
+
+.skill-img__mid-div {
+  background-color: magenta;
+}
+
+.skill-img__bottom-div {
+  background-color: red;
+}
+
+.hoverable-div {
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+  transition: all 1s ease-out;
+}
+
+/* Hovered part */
+.hoverable-div:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+/* Non-hovered part */
+.skills-buttons-div:hover .hoverable-div:not(:hover) {
+  opacity: 0.2;
+  filter: blur(1px);
+}
+
+.active {
+  display: flex !important;
+}
+.passive {
+  display: none;
+}
+/* Be removed on hover any div, see .skills-container */
+.justify-center{
+  justify-content: center !important;
+}
+
+/* .skills-showcase-div{
+  transition: all 1s ease-out !important;
+} */
+
+
+
+
+
+
+
+
+/* |------------------ About Me Section  ------------------| */
+#about-me {
+  min-height: 80svh;
+  padding-top: 10%;
+  /* Various clip paths: */
+  /* clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%); */
+  /* Trapezoidal
+  /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+  /* Right arrow */
+  /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); */
+  /* Left arrow */
+
+  /* background-color: #18B5BD;
+  background-image: linear-gradient(160deg, #18B5BD 0%, #64E3D6 100%); */
+}
+
+#about-me .container {
+  height: 60svh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-img {
+  background-size: contain;
+  width: 200px;
+  height: 300px;
+}
+
+.about-me-title {
+  margin: 3%;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 5%;
+  font-weight: 700;
+  color: rgba(0, 205, 172, 1);
+}
+
+.about-me-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.about-me-content{
+  font-size: 16px;
+  padding: 3% 0 3%;
+}
+
+
+
+
+
+
+/* |------------------ Contact Navigation Bar ------------------| */
+nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#hero nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  margin: 1.6rem;
+  transition: all .2s ease-in;
+}
+
+#hero nav a i {
+  color: #00cdac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero nav a:hover {
+  transform: scale(1.1);
+}
+
+#hero nav a i:hover {
+  color: #64E3D6;
+}
+
+
+
+
+
+
+/* |------------------  Main title  ------------------| */
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  margin-left: 15%;
+  /* Full screen height */
+  height: 100vh;
+}
+
+.hero-title {
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.container-title {
+  margin-top: 25%;
+}
+
+.title-name {
+  background: linear-gradient(271deg, #00cdac 12%, #74ffd6 40%, #64E3D6 50%, #56dbdb 64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: #64E3D6; */
+}
+
+
+
+
+
+
+/* |------------------ Cta Navigation Bar ------------------| */
+ul {
+  display: flex;
+  flex-direction: row;
+  /* For responsiveness, need wrap */
+  flex-wrap: wrap;
+  gap: 72px;
+  /* Little padding between "skills" and left of "ul" box */
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Default all*/
+ul li a {
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #00cdac;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+
+/* Hovered element */
+ul:hover li a {
+  color: #64E3D6;
+}
+
+/* Remaining not-hovered elements */
+ul:hover li a:not(:hover) {
+  color: #02aab0;
+  opacity: 0.3;
+  filter: blur(1px);
+}
