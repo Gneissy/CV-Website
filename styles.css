@@ -1,6 +1,4 @@
-body {
-  font-family: Montserrat, sans-serif;
-}
+body { font-family: Montserrat, sans-serif; }
 
 p {
   margin: 0;
@@ -11,27 +9,17 @@ p {
 
 
 
-
-
-
-/* ------------------ on Refactor, use these: ------------------*/
-
 /* Reusable classes */
-.flex-box-row {
-  display: flex;
-}
-
+.flex-box-row { display: flex; }
 .flex-box-column {
   display: flex;
   flex-direction: column;
 }
-
 .flex-box-row-centered {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .flex-box-column-centered {
   display: flex;
   flex-direction: column;
@@ -43,24 +31,10 @@ p {
 
 
 
+/* Refactored 10.26  25.03.2023*/
 /* ------------------ Project Section ------------------ */
-#projects {
-  /* temp */
-  background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
-}
-
-#projects .container {
-  width: 75%;
-}
-
-/* @@@ Left container @@@ */
-.projects-left-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 5% 0 5%;
-}
-
+#projects {} /* Not styled yet */
+#projects .container { width: 75%; }
 .projects-title {
   text-align: center;
   font-size: 3rem;
@@ -69,73 +43,34 @@ p {
   color: rgba(0, 205, 172, 1);
 }
 
-.project-name--stack-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10%;
-}
 
-.project-name-box {
-  display: flex;
+/* @@@ Left container @@@ */
+.projects-left-container {
   justify-content: center;
-  /* Maybe flex-start is better? */
-  align-items: center;
-}
-
-.project-stack-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-.project-buttons-box {
-  display: flex;
-  justify-content: center;
-  /* Maybe space-evenly is better */
-  align-items: center;
   margin: 5% 0 5%;
 }
-
+.project-name--stack-box { margin-bottom: 10%; }
+.project-name-box {
+  justify-content: center;   /* Maybe flex-start is better? */
+  align-items: center;
+}
 .project-name {
   font-size: 2.5rem;
   font-weight: 700;
 }
-
-.project-detail {
-  margin-bottom: 5%;
+.project-stack-box {
+  flex-wrap: wrap;
+  align-content: center;
 }
-
-/* @@@ Right Container @@@ */
-.projects-right-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* Maybe flex-start is better */
-  align-items: center;
-}
-
-.project-video-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10%;
-}
-
-.project-video {
-  max-width: 100%;
-  max-height: 100%;
-}
-
+.project-details-box {} /* Not styled yet */
+.project-detail { margin-bottom: 5%; }
+.project-extra-info-box {} /* Not styled yet */
+.project-extra-info {} /* Not styled yet */
 .project-buttons-box {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
+  justify-content: center;   /* Maybe space-evenly is better */
+  align-items: center;
+  margin: 5% 0 5%;
 }
-
 .project-redirect-button {
   width: 30%;
   text-align: center;
@@ -149,57 +84,43 @@ p {
   border: none;
   background-color: transparent;
 }
+.project-redirect-button:hover { color: #64E3D6; }
 
-.project-redirect-button:hover {
-  color: #64E3D6;
+
+/* @@@ Right Container @@@ */
+.projects-right-container {
+  /* justify-content: center; /* Flex-end better maybe */ */
+}
+.project-video-box { padding: 10%; }
+.project-video {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
 
 
 
-
+/* Refactored 10:19  26.03.2023 */
 /* |------------------ Footer Section  ------------------| */
 footer {
   background-color: #343434;
   padding: 5% 0 2%;
 }
-
 footer .container {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   min-height: 100px;
 }
-
-footer .footer-links {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.footer-contact-nav {
-  color: #c7f2ff;
-}
-
-.footer-contact-nav:hover {
-  color: #11999E;
-}
-
-footer div a {
-  transition: transform .25s ease-out;
-}
-
-footer div a:hover {
-  transform: scale(1.3);
-}
-
+footer .footer-links { justify-content: space-evenly; }
+footer div a { transition: transform .25s ease-out; }
+footer div a:hover { transform: scale(1.3); }
+.footer-contact-nav { color: #c7f2ff; }
+.footer-contact-nav:hover { color: #11999E; }
 footer .footer-text-box {
-  display: flex;
   min-height: 80px;
   justify-content: center;
   align-items: flex-end;
 }
-
 .footer-text {
   color: #c7f2ff;
   margin: 0;
@@ -210,22 +131,10 @@ footer .footer-text-box {
 
 
 
-
-
-
+/* Refactored 10:16  26.03.2023 */
 /* |------------------ Contact Me Section  ------------------| */
-#contact-me {
-  height: 60svh;
-}
-
-#contact-me .contact-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5% 0;
-}
-
+#contact-me { height: 60svh; }
+#contact-me .contact-wrapper { margin: 5% 0; }
 .contact-title {
   text-align: center;
   font-size: 3rem;
@@ -233,12 +142,7 @@ footer .footer-text-box {
   font-weight: 700;
   color: rgba(0, 205, 172, 1);
 }
-
-#contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
+#contact-form {}
 #contact-me input,
 #contact-me textarea {
   border: none;
@@ -248,25 +152,11 @@ footer .footer-text-box {
   transition: all 1s ease-out;
   caret-color: #00cdac;
 }
-
-/* To get rid of autocomplete input background color */
-input:-webkit-autofill {
-  -webkit-background-clip: text;
-}
-
-/* @@@@@@@@@@@ TEMP Try to fix underline of input TEMP @@@@@@@@@@@ */
-input {
-  text-decoration: none;
-  outline: none;
-}
-
-/* @@@@@@@@@@@ TEMP Try to fix underline of input TEMP @@@@@@@@@@@ */
 .input-container {
   /* To make absolute positioning on label */
   position: relative;
   margin-bottom: 48px;
 }
-
 .input-container label {
   position: absolute;
   top: 0;
@@ -274,13 +164,11 @@ input {
   pointer-events: none;
   transition: all 0.5s ease-out;
 }
-
 .input-container input:focus {
   border: none;
   outline: none;
   border-bottom: 1px solid red;
 }
-
 /* Little animation on focus */
 .input-container input:focus+label,
 .input-container textarea:focus+label,
@@ -291,23 +179,17 @@ input {
   font-size: 12px;
   opacity: 0.8;
 }
-
-[type="email"] {
-  color: #00cdac;
-}
-
-/* If input is invalid */
 .input-container input:invalid {
+  /* If input is invalid */
   color: #ff4c68;
   opacity: 0.25;
 }
-
-.submit-btn-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+[type="email"] { color: #00cdac; }
+input:-webkit-autofill {
+  /* To get rid of autocomplete input background color */
+  -webkit-background-clip: text;
 }
-
+.submit-btn-box { /* Doesnt have additional style yet */ }
 .submit-btn {
   width: 30%;
   text-align: center;
@@ -321,12 +203,9 @@ input {
   border: none;
   background-color: transparent;
 }
-
-.submit-btn:hover {
-  color: #64E3D6;
-}
-
+.submit-btn:hover { color: #64E3D6; }
 #message-container {
+  /* This will be displayed when user submits */
   display: none;
   justify-content: center;
   align-items: center;
@@ -343,21 +222,14 @@ input {
 
 
 
-
-
+/* Refactored 11:17  26.03.2023 */
 /* |------------------ Skills Section  ------------------| */
-#skills {
-  background-color: lightyellow;
-}
-
+#skills {/* background-color: lightblue; */}
 #skills .container {
   width: 50%;
   padding-top: 10%;
 }
-
-#skills .container h1 {
-  text-align: center;
-}
+#skills .container h1 { text-align: center; }
 .skills-title{
   text-align: center;
   font-size: 3rem;
@@ -365,62 +237,50 @@ input {
   font-weight: 700;
   color: rgba(0, 205, 172, 1);
 }
+.skills-buttons-div {/* flex-box-column-centered */}
+.skill-img__top-div {background-color: blue;}
+.skill-img__mid-div {background-color: magenta;}
+.skill-img__bottom-div {background-color: red;}
+.hoverable-div {
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+  transition: all 1s ease-out;
+}
+.hoverable-div:hover {
+  /* Hovered part of image */
+  opacity: 1;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.skills-buttons-div:hover .hoverable-div:not(:hover) {
+  /* Remaining non-hovered parts */
+  opacity: 0.2;
+  filter: blur(1px);
+}
+.skills-showcase-div {/* flex-box-column-centered */}
 .skills-container {
   min-height: 600px;
   margin: 10% 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   gap: 70px;
-  /* Maybe center is better */
-  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   align-content: center;
 }
-.skill-box {
-  /* width: 150px;
-  height: 150px; */
-  opacity: .2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  transition: opacity 1s ease;
-  /* margin: 16px; */
-}
-
-.skills-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.skill-img {
-  width: 48px;
-  height: 48px;
-  display: inline-block;
-  margin-bottom: 1rem;
-  /* transition: all 0.5s ease-out; */
-}
-
-.skill-text {
-  text-align: center;
-}
+.skills-info { flex-wrap: wrap; }
+.skill-text { text-align: center; }
 h5.skills-text{
   margin-top: 10%;
   font-style: italic;
   color: #00cdac;
 }
-.skill-box--wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.frontend-text,
+.tool-text,
+.backend-text{
+  /* Haven't styled yet */
 }
+.skill-box--wrapper { flex-wrap: wrap; }
 .skill-box--frontend,
 .skill-box--tool,
 .skill-box--backend{
@@ -430,144 +290,56 @@ h5.skills-text{
   align-items: center;
   flex-wrap: wrap;
 }
-
-
-
-
-
-.skills-buttons-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.skill-box {
+  opacity: .2;
+  padding: 16px;
+  transition: opacity 1s ease;
+  /* Just in case, it may require some dimension adjustmens*/
+  /* width: 150px;
+  height: 150px;
+  margin: 16px; */
 }
-
-.skills-showcase-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.skill-image-box{ /* Haven't styled yet */}
+.skill-img {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
-
-.skill-img__top-div {
-  background-color: blue;
-}
-
-.skill-img__mid-div {
-  background-color: magenta;
-}
-
-.skill-img__bottom-div {
-  background-color: red;
-}
-
-.hoverable-div {
-  width: 100px;
-  height: 100px;
-  opacity: 0.5;
-  transition: all 1s ease-out;
-}
-
-/* Hovered part */
-.hoverable-div:hover {
-  opacity: 1;
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-
-/* Non-hovered part */
-.skills-buttons-div:hover .hoverable-div:not(:hover) {
-  opacity: 0.2;
-  filter: blur(1px);
-}
-
-.active {
-  display: flex !important;
-}
-.passive {
-  display: none;
-}
-/* Be removed on hover any div, see .skills-container */
+.active { display: flex !important; }
+.passive { display: none; }
 .justify-center{
+  /* Will be removed on hover any div, see .skills-container */
   justify-content: center !important;
 }
 
-/* .skills-showcase-div{
-  transition: all 1s ease-out !important;
-} */
 
 
 
 
-
-
-
-
+/* Refactored 10:40  26.03.2023 */
 /* |------------------ About Me Section  ------------------| */
 #about-me {
   min-height: 80svh;
-  padding-top: 10%;
-  /* Various clip paths: */
   /* clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%); */
-  /* Trapezoidal
-  /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
-  /* Right arrow */
-  /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); */
-  /* Left arrow */
-
-  /* background-color: #18B5BD;
-  background-image: linear-gradient(160deg, #18B5BD 0%, #64E3D6 100%); */
 }
-
-#about-me .container {
-  height: 60svh;
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#about-me .container { width: 60%; }
+.container-about-me { /*flex-box-column-centered*/ }
+.about-me-title {
+  margin: 3%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(0, 205, 172, 1);
 }
-
-.container-about-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-me-img-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
+.about-me-image-wrapper { /* flex-box-row-centered */}
+.about-me-img-container { /* flex-box-row-centered */}
 .about-me-img {
   background-size: contain;
   width: 200px;
   height: 300px;
 }
-
-.about-me-title {
-  margin: 3%;
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 5%;
-  font-weight: 700;
-  color: rgba(0, 205, 172, 1);
-}
-
-.about-me-image-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.about-me-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
+.about-me-content-wrapper { justify-content: flex-end; }
 .about-me-content{
   font-size: 16px;
   padding: 3% 0 3%;
@@ -577,7 +349,7 @@ h5.skills-text{
 
 
 
-
+/* Refactored 10:46  26.03.2023 */
 /* |------------------ Contact Navigation Bar ------------------| */
 nav {
   display: flex;
@@ -585,15 +357,11 @@ nav {
   top: 0;
   right: 0;
 }
-
 a {
   background-color: transparent;
   text-decoration: none;
 }
-
 #hero nav a {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   color: #fff;
   font-size: 3rem;
@@ -602,49 +370,28 @@ a {
   margin: 1.6rem;
   transition: all .2s ease-in;
 }
-
-#hero nav a i {
-  color: #00cdac;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#hero nav a:hover {
-  transform: scale(1.1);
-}
-
-#hero nav a i:hover {
-  color: #64E3D6;
-}
+#hero nav a:hover { transform: scale(1.1); }
+#hero nav a i { color: #00cdac; }
+#hero nav a i:hover { color: #64E3D6; }
 
 
 
 
 
-
+/* Refactored 10:49  26.03.2023 */
 /* |------------------  Main title  ------------------| */
 #hero .container {
-  display: flex;
-  flex-direction: column;
-  /* position: absolute; */
   margin-left: 15%;
-  /* Full screen height */
-  height: 100vh;
+  height: 100svh; /* Full screen height */
 }
-
+.container-title { margin-top: 25%; }
 .hero-title {
   text-align: left;
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 3.2rem;
 }
-
-.container-title {
-  margin-top: 25%;
-}
-
-.title-name {
+.title-content {
   background: linear-gradient(271deg, #00cdac 12%, #74ffd6 40%, #64E3D6 50%, #56dbdb 64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -655,23 +402,14 @@ a {
 
 
 
-
+/* Refactored 10:53  26.03.2023 */
 /* |------------------ Cta Navigation Bar ------------------| */
 ul {
-  display: flex;
-  flex-direction: row;
-  /* For responsiveness, need wrap */
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* For responsiveness */
   gap: 72px;
-  /* Little padding between "skills" and left of "ul" box */
-  padding-left: 0;
+  padding-left: 0; /* Eliminating little padding between "skills" and "ul" */
 }
-
-ul li {
-  list-style: none;
-}
-
-/* Default all*/
+ul li { list-style: none; }
 ul li a {
   font-size: 26px;
   font-weight: 700;
@@ -680,14 +418,9 @@ ul li a {
   padding: 10px;
   transition: 0.5s ease;
 }
-
-/* Hovered element */
-ul:hover li a {
-  color: #64E3D6;
-}
-
-/* Remaining not-hovered elements */
+ul:hover li a { color: #64E3D6; /* Hovered element */ }
 ul:hover li a:not(:hover) {
+  /* Remaining not-hovered elements */
   color: #02aab0;
   opacity: 0.3;
   filter: blur(1px);
