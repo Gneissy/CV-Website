@@ -5,6 +5,72 @@
 gsap.registerPlugin(ScrollTrigger); // Activating ScrollTrigger
 
 
+// @@@@@@@@@@@@@@@@@@@@ Dark Mode @@@@@@@@@@@@@@@@@@@@
+
+// This stores the info for the last choice of user, like cookies. No expiration.
+// This property is all stored locally, no server related, biggest difference from cookies.
+let darkMode = localStorage.getItem("darkMode");
+
+// This is the button that user interact in order to change the theme.
+const darkModeToggle = document.querySelector("#dark-mode-toggle");
+
+// Main logic is like this:
+// Check if dark mode is enabled
+// If it is enable, disable it.
+// If it is disabled, enable it.
+
+const enableDarkMode = function(){
+  // Add related dark mode classes into elements
+  $("body").addClass("darkmode-body");
+  $("input, textarea").addClass("darkmode-form");
+
+  // Update dark mode preference in local storage
+  localStorage.setItem("darkMode", "enabled");
+}
+
+const disableDarkMode = function(){
+  // Remove related dark mode classes into elements
+  $("body").removeClass("darkmode-body");
+  $("input, textarea").removeClass("darkmode-form");
+
+  // Update dark mode preference in local storage
+  localStorage.setItem("darkMode", null);
+}
+
+// When the page first loads, remember choice
+if(darkMode === "enabled"){
+  enableDarkMode();
+  // Here will be required the "turn-toggle-img" most probably
+}
+
+darkModeToggle.addEventListener("click", function(){
+  // Every time button is pressed, update darkMode in localStorage
+  darkMode = localStorage.getItem("darkMode");
+
+  if(darkMode !== "enabled"){
+    enableDarkMode();
+    $(".dark-mode-toggle-image").addClass("turn-toggle-img");
+  }else{
+    disableDarkMode();
+    $(".dark-mode-toggle-image").removeClass("turn-toggle-img");
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Fetch contact mails
 const form = document.getElementById("contact-form");
 const messageContainer = document.getElementById("message-container");

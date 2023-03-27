@@ -21,35 +21,70 @@
 
 
 <body>
+
   <!-- @@@@@@@@@@@@@@@@@@@@ HERO SECTION @@@@@@@@@@@@@@@@@@@@ -->
   <section id="hero">
     <nav>
-      <a class="flex-box-column-centered" href="https://www.linkedin.com/in/ahmetserteser/"> <i class="flex-box-row-centered fa-contact fa-brands fa-linkedin hero-contact-nav" target="_blank"></i></a>
-      <a class="flex-box-column-centered" href="https://github.com/Gneissy"> <i class="flex-box-row-centered fa-contact fa-brands fa-github hero-contact-nav" target="_blank"></i></a>
-      <a class="flex-box-column-centered" href="https://www.instagram.com/ahmetsrtsr"> <i class="flex-box-row-centered fa-contact fa-brands fa-instagram hero-contact-nav" target="_blank"></i></a>
+      <a class="flex-box-column-centered" href="https://www.linkedin.com/in/ahmetserteser/"> <i class="flex-box-row-centered main-color-theme fa-contact fa-brands fa-linkedin hero-contact-nav" target="_blank"></i></a>
+      <a class="flex-box-column-centered" href="https://github.com/Gneissy"> <i class="flex-box-row-centered main-color-theme fa-contact fa-brands fa-github hero-contact-nav" target="_blank"></i></a>
+      <a class="flex-box-column-centered" href="https://www.instagram.com/ahmetsrtsr"> <i class="flex-box-row-centered main-color-theme fa-contact fa-brands fa-instagram hero-contact-nav" target="_blank"></i></a>
     </nav>
     <div class="container flex-box-column">
       <div class="container-title">
         <h1 class="hero-title">
-          <span class="title-content">Ahmet</span> here.
+          Hey there! It's
+          <span class="title-content main-color-theme">Ahmet.</span>
           <br>
-          A full stack developer, I am.
+          <p class = "hero-little-title">A full stack web developer.</p>
+
         </h1>
       </div>
       <ul class="hero-nav flex-box-row">
-        <li class="hero-nav-link"><a href="#skills">Skills</a></li>
-        <li class="hero-nav-link"><a href="#about-me">About</a></li>
-        <li class="hero-nav-link"><a href="#projects">Projects</a></li>
-        <li class="hero-nav-link"><a href="#contact-me">Contact</a></li>
+        <li class="hero-nav-link"><a class = "main-color-theme" href="#about-me">About</a></li>
+        <li class="hero-nav-link"><a class = "main-color-theme" href="#skills">Skills</a></li>
+        <li class="hero-nav-link"><a class = "main-color-theme" href="#projects">Projects</a></li>
+        <li class="hero-nav-link"><a class = "main-color-theme" href="#contact-me">Contact</a></li>
       </ul>
     </div>
+    <button id = "dark-mode-toggle" class = "dark-mode-toggle">
+      <img class = "dark-mode-toggle-image" src="./images/dark-theme.svg" alt="dark theme toggle menu">
+    </button>
   </section>
 
+
+
+
+
+
+
+
+
+  <!-- @@@@@@@@@@@@@@@@@@@@ ABOUT ME SECTION @@@@@@@@@@@@@@@@@@@@ -->
+  <section id="about-me" class="flex-box-row-centered">
+    <div class="container flex-box-row-centered">
+      <div class="container-about-me flex-box-column-centered">
+        <h1 class="about-me-title main-color-theme">About Me</h1>
+        <div class="row">
+          <div class="about-me-content-wrapper flex-box-column col-lg-6 col-md-12 col-sm-12">
+            <p class="about-me-content">As a mining engineer, before running into my dreams i had been ...</p>
+            <p class="about-me-content">In 2022 June, i decided to change my carrier plan. I rolled up my sleeves and get started to improve my programming skills. With a receptive mind, a can-do attitude, and an appetite for innovation, I swiftly
+              assimilate novel ideas and approaches to tackle any obstacle. </p>
+            <p class="about-me-content">While I'm not coding, I enjoy thinking about chess, playing competitive first-person shooter games, and playing online games with my buddies.</p>
+          </div>
+          <div class="about-me-image-wrapper flex-box-row-centered col-lg-6 col-md-12 col-sm-12">
+            <div class="about-me-img-container flex-box-row-centered">
+              <img class="about-me-img" src="https://1.bp.blogspot.com/-dKX1BEXAzxc/XNycyhoIKdI/AAAAAAAECdM/bOWX_HyaGAIY71053VNAm82BK2rbb0U4gCK4BGAYYCw/s1600/1.jpg" alt="at">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- @@@@@@@@@@@@@@@@@@@@ SKILLS SECTION @@@@@@@@@@@@@@@@@@@@ -->
   <section id="skills">
     <div class="container">
-      <h1 class="skills-title">Skills</h1>
+      <h1 class="skills-title main-color-theme">Skills</h1>
       <br>
       <div class="row">
         <div class="skills-buttons-div flex-box-column-centered col-lg-6 col-md-12 col-sm-12">
@@ -69,7 +104,7 @@
           <div class="skills-container flex-box-column justify-center">
             <div class="skills-info flex-box-column-centered">
               <h2 class="skills-text skills-text-animation">Mining is actually like programming, having different aspects. </h2>
-              <h5 class="skills-text skills-text-animation">Please select a layer to see corresponding skills. </h5>
+              <h5 class="skills-text skills-text-animation main-color-theme">Please select a layer to see corresponding skills. </h5>
               <h1 class="frontend-text passive stack-field">Front End</h1>
               <h5 class="frontend-text passive stack-field">In the open air, everything looks elegant and shiny. </h5>
               <h1 class="tool-text passive stack-field">Tools</h1>
@@ -87,50 +122,58 @@
                 </div>
                 <div class="skill-box flex-box-column-centered frontend">
                   <div class="skill-image-box">
-                    <img class="skill-img" src="./images/html5.png" alt="html5 image">
+                    <img class="skill-img" src="./images/css3.png" alt="css3 image">
                   </div>
-                  <h4 class="skill-text">HTML5</h4>
+                  <h4 class="skill-text">CSS3</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered frontend">
                   <div class="skill-image-box">
-                    <img class="skill-img" src="./images/html5.png" alt="html5 image">
+                    <img class="skill-img" src="./images/javascript.png" alt="javascript image">
                   </div>
-                  <h4 class="skill-text">HTML5</h4>
+                  <h4 class="skill-text">Javascript</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered frontend">
-                  <img class="skill-img" src="./images/html5.png" alt="html5 image">
-                  <h4 class="skill-text">HTML5</h4>
+                  <img class="skill-img" src="./images/react.png" alt="react image">
+                  <h4 class="skill-text">React</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered frontend">
-                  <img class="skill-img" src="./images/html5.png" alt="html5 image">
-                  <h4 class="skill-text">HTML5</h4>
+                  <img class="skill-img" src="./images/jQuery.png" alt="jQuery image">
+                  <h4 class="skill-text">jQuery</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered frontend">
-                  <img class="skill-img" src="./images/html5.png" alt="html5 image">
-                  <h4 class="skill-text">HTML5</h4>
-                </div>
-                <div class="skill-box flex-box-column-centered frontend">
-                  <img class="skill-img" src="./images/html5.png" alt="html5 image">
-                  <h4 class="skill-text">HTML5</h4>
+                  <img class="skill-img" src="./images/Bootstrap.png" alt="Bootstrap image">
+                  <h4 class="skill-text">Bootstrap</h4>
                 </div>
               </div>
               <div class="skill-box--tool passive">
                 <div class="skill-box flex-box-column-centered tool">
-                  <img class="skill-img" src="./images/html5.png" alt="html5 image">
+                  <img class="skill-img" src="./images/git.png" alt="git image">
                   <h4 class="skill-text">Git</h4>
+                </div>
+                <div class="skill-box flex-box-column-centered tool">
+                  <img class="skill-img" src="./images/github.png" alt="github image">
+                  <h4 class="skill-text">Github</h4>
                 </div>
               </div>
               <div class="skill-box--backend passive">
                 <div class="skill-box flex-box-column-centered backend">
-                  <img class="skill-img" src="./images/html5.png" alt="html5 image">
+                  <img class="skill-img" src="./images/nodejs.png" alt="nodejs image">
                   <h4 class="skill-text">Node.js</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered backend">
-                  <img class="skill-img" src="./images/html5.png" alt="html5 image">
+                  <img class="skill-img" src="./images/expressjs.png" alt="expressjs image">
+                  <h4 class="skill-text">Express.js</h4>
+                </div>
+                <div class="skill-box flex-box-column-centered backend">
+                  <img class="skill-img" src="./images/mongodb.png" alt="mongodb image">
                   <h4 class="skill-text">MongoDB</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered backend">
-                  <img class="skill-img" src="./images/html5.png" alt="html5 image">
+                  <img class="skill-img" src="./images/MySQL.png" alt="MySQL image">
+                  <h4 class="skill-text">MySQL</h4>
+                </div>
+                <div class="skill-box flex-box-column-centered backend">
+                  <img class="skill-img" src="./images/restapis.png" alt="restapis image">
                   <h4 class="skill-text">REST APIs</h4>
                 </div>
               </div>
@@ -142,27 +185,7 @@
   </section>
 
 
-  <!-- @@@@@@@@@@@@@@@@@@@@ ABOUT ME SECTION @@@@@@@@@@@@@@@@@@@@ -->
-  <section id="about-me" class="flex-box-row-centered">
-    <div class="container flex-box-row-centered">
-      <div class="container-about-me flex-box-column-centered">
-        <h1 class="about-me-title">About Me</h1>
-        <div class="row">
-          <div class="about-me-image-wrapper flex-box-row-centered col-lg-6 col-md-12 col-sm-12">
-            <div class="about-me-img-container flex-box-row-centered">
-              <img class="about-me-img" src="https://1.bp.blogspot.com/-dKX1BEXAzxc/XNycyhoIKdI/AAAAAAAECdM/bOWX_HyaGAIY71053VNAm82BK2rbb0U4gCK4BGAYYCw/s1600/1.jpg" alt="at">
-            </div>
-          </div>
-          <div class="about-me-content-wrapper flex-box-column col-lg-6 col-md-12 col-sm-12">
-            <p class="about-me-content">As a mining engineer, before running into my dreams i had been ...</p>
-            <p class="about-me-content">In 2022 June, i decided to change my carrier plan. I rolled up my sleeves and get started to improve my programming skills. With a receptive mind, a can-do attitude, and an appetite for innovation, I swiftly
-              assimilate novel ideas and approaches to tackle any obstacle. </p>
-            <p class="about-me-content">While I'm not coding, I enjoy thinking about chess, playing competitive first-person shooter games, and playing online games with my buddies.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
 
   <!-- @@@@@@@@@@@@@@@@@@@@ PROJECTS SECTION @@@@@@@@@@@@@@@@@@@@ -->
@@ -170,7 +193,7 @@
       Even individual-project containers (like 2nd, 4th etc...) should have
       flex-direction: row-reverse property on media breakpoint. -->
   <section id="projects">
-    <h2 class="projects-title">PROJECTS</h2>
+    <h2 class="projects-title main-color-theme">PROJECTS</h2>
     <div class="individual-project container">
       <div class="row">
         <div class="projects-left-container flex-box-column col-lg-6 col-md-12 col-sm-12">
@@ -181,10 +204,15 @@
             <div class="project-stack-box flex-box-row-centered">
               <!-- <p>Technologies:</p> -->
               <!-- A image wrapper div may be attached if needed -->
-              <img class="project-stack-icon" src="./images/mongodb.png" alt="mongodb-img">
-              <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
-              <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
-              <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
+              <div class="project-stack-icon-div">
+                <img class="project-stack-icon" src="./images/mongodb.png" alt="mongodb-img">
+              </div>
+              <div class="project-stack-icon-div">
+                <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
+              </div>
+              <div class="project-stack-icon-div">
+                <img class="project-stack-icon" src="./images/express-js.png" alt="expressjs-img">
+              </div>
             </div>
           </div>
           <div class="project-details-box">
@@ -195,10 +223,7 @@
           <div class="project-extra-info-box">
             <p class="project-extra-info">App is hosted via <a href="https://render.com/" target="_blank">render</a>, so it may last around 10-20s for page to load.</p>
           </div>
-          <div class="project-buttons-box flex-box-row">
-            <a class="project-redirect-button" href="https://lost-ark-craft.onrender.com/" target="_blank">Go live</button></a>
-            <a class="project-redirect-button" href="https://github.com/Gneissy/LostArkCraft" target="_blank">Code</button></a>
-          </div>
+
         </div>
         <div class="projects-right-container flex-box-column-centered col-lg-6 col-md-12 col-sm-12">
           <div class="project-video-box flex-box-row-centered">
@@ -206,6 +231,10 @@
               <iframe width="426" height="240" src="https://www.youtube.com/embed/Y3FNXwhNZr0" title="Swords and Sandals Yell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             </div>
+          </div>
+          <div class="project-buttons-box flex-box-row">
+            <a class="project-redirect-button main-color-theme" href="https://lost-ark-craft.onrender.com/" target="_blank">Live Demo</button></a>
+            <a class="project-redirect-button main-color-theme" href="https://github.com/Gneissy/LostArkCraft" target="_blank">Source Code</button></a>
           </div>
         </div>
       </div>
@@ -219,6 +248,10 @@
                 allowfullscreen></iframe>
             </div>
           </div>
+          <div class="project-buttons-box flex-box-row">
+            <a class="project-redirect-button main-color-theme" href="https://lost-ark-craft.onrender.com/" target="_blank">Live Demo</button></a>
+            <a class="project-redirect-button main-color-theme" href="https://github.com/Gneissy/LostArkCraft" target="_blank">Source Code</button></a>
+          </div>
         </div>
         <div class="projects-left-container flex-box-column col-lg-6 col-md-12 col-sm-12">
           <div class="row project-name--stack-box flex-box-row-centered">
@@ -228,10 +261,16 @@
             <div class="project-stack-box flex-box-row-centered">
               <!-- <p>Technologies:</p> -->
               <!-- A image wrapper div may be attached if needed -->
-              <img class="project-stack-icon" src="./images/mongodb.png" alt="mongodb-img">
-              <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
-              <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
-              <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
+              <div class="project-stack-icon-div">
+                <img class="project-stack-icon" src="./images/mongodb.png" alt="mongodb-img">
+              </div>
+              <div class="project-stack-icon-div">
+                <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
+              </div>
+              <div class="project-stack-icon-div">
+                <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
+                
+              </div>
             </div>
           </div>
           <div class="project-details-box">
@@ -241,10 +280,6 @@
           </div>
           <div class="project-extra-info-box">
             <p class="project-extra-info">App is hosted via <a href="https://render.com/" target="_blank">render</a>, so it may last around 10-20s for page to load.</p>
-          </div>
-          <div class="project-buttons-box flex-box-row">
-            <a class="project-redirect-button" href="https://lost-ark-craft.onrender.com/" target="_blank">Go live</button></a>
-            <a class="project-redirect-button" href="https://github.com/Gneissy/LostArkCraft" target="_blank">Code</button></a>
           </div>
         </div>
       </div>
@@ -256,7 +291,7 @@
   <!-- @@@@@@@@@@@@@@@@@@@@ CONTACT ME SECTION @@@@@@@@@@@@@@@@@@@@ -->
   <section id="contact-me">
     <div class="contact-wrapper flex-box-column-centered">
-      <h3 class="contact-title">Contact Me</h3>
+      <h3 class="contact-title main-color-theme">Contact Me</h3>
       <form id="contact-form" class="flex-box-column" action="https://formspree.io/f/mzbqaadk" method="post">
         <div class="input-container">
           <input type="text" name="name" required>
@@ -271,12 +306,16 @@
           <label>Message</label>
         </div>
         <div class="submit-btn-box flex-box-row-centered">
-          <button class="submit-btn" name="submitButton" type="submit">Send</button>
+          <button class="submit-btn main-color-theme" name="submitButton" type="submit">Send</button>
         </div>
         <div id="message-container"></div>
       </form>
     </div>
   </section>
+
+
+
+
 
 
   <!-- @@@@@@@@@@@@@@@@@@@@ FOOTER SECTION @@@@@@@@@@@@@@@@@@@@ -->
