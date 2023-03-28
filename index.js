@@ -2,7 +2,26 @@
 
 
 
+
+
+
 gsap.registerPlugin(ScrollTrigger); // Activating ScrollTrigger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // @@@@@@@@@@@@@@@@@@@@ Dark Mode @@@@@@@@@@@@@@@@@@@@
@@ -23,6 +42,14 @@ const enableDarkMode = function(){
   // Add related dark mode classes into elements
   $("body").addClass("darkmode-body");
   $("input, textarea").addClass("darkmode-form");
+  $("#hero").addClass("darkmode-hero");
+  $("#about-me").addClass("darkmode-about-me");
+  $("#skills").addClass("darkmode-skills");
+  $("#projects").addClass("darkmode-projects");
+  $("#contact-me").addClass("darkmode-contact-me");
+  $("#footer").addClass("darkmode-footer");
+
+
 
   // Update dark mode preference in local storage
   localStorage.setItem("darkMode", "enabled");
@@ -32,6 +59,13 @@ const disableDarkMode = function(){
   // Remove related dark mode classes into elements
   $("body").removeClass("darkmode-body");
   $("input, textarea").removeClass("darkmode-form");
+  $("#hero").removeClass("darkmode-hero");
+  $("#about-me").removeClass("darkmode-about-me");
+  $("#skills").removeClass("darkmode-skills");
+  $("#projects").removeClass("darkmode-projects");
+  $("#contact-me").removeClass("darkmode-contact-me");
+  $("#footer").removeClass("darkmode-footer");
+
 
   // Update dark mode preference in local storage
   localStorage.setItem("darkMode", null);
@@ -40,8 +74,12 @@ const disableDarkMode = function(){
 // When the page first loads, remember choice
 if(darkMode === "enabled"){
   enableDarkMode();
+  $(".dark-mode-toggle-image").addClass("turn-toggle-img");
   // Here will be required the "turn-toggle-img" most probably
+} else{
+  $(".dark-mode-toggle-image").removeClass("turn-toggle-img");
 }
+
 
 darkModeToggle.addEventListener("click", function(){
   // Every time button is pressed, update darkMode in localStorage
@@ -312,6 +350,131 @@ $(".skill-img__bottom-div").hover(function(){
   skillsStackTextAnimationBackend.restart();
   // Each hover on ".skill-img__bottom-div" restarts revaling animation
 });
+
+
+
+
+
+
+// About me title and text animations
+gsap.from(".about-me-title",  {
+    scrollTrigger: ".about-me-title",
+    y: -40,
+    opacity: 0,
+    duration: 1,
+    ease:"power1.out"
+  });
+  gsap.from(".about-me-content",  {
+      scrollTrigger: ".about-me-content",
+      x: -40,
+      opacity: 0,
+      duration: 1,
+      ease:"Back.easeOut",
+      stagger: .3
+    });
+    gsap.from(".about-me-img",  {
+        scrollTrigger: ".about-me-img",
+        x: 40,
+        opacity: 0,
+        duration: 1,
+        ease:"Back.easeOut",
+        stagger: .3
+      });
+
+  // .from(".about-me-img", {
+  //   scrollTrigger: "#about-me",
+  //   x: 40,
+  //   opacity: 0,
+  //   duration: .5,
+  //   ease:"power1.out",
+  //   stagger:0.2
+  // });
+
+
+
+
+
+  // skills title animation
+  gsap.from(".skills-title",  {
+      scrollTrigger: ".skills-title",
+      y: -40,
+      opacity: 0,
+      duration: 1,
+      ease:"power1.out",
+      stagger:0.2,
+    });
+
+
+
+
+    // Projects title and text animations
+    gsap.from(".projects-title",  {
+        scrollTrigger: ".projects-title",
+        y: -40,
+        opacity: 0,
+        duration: 1,
+        ease:"power1.out"
+      });
+
+    gsap.from(".projects-left1",  {
+        scrollTrigger: ".projects-left1",
+        x: -40,
+        opacity: 0,
+        duration: 1,
+        ease:"Back.easeOut",
+        stagger: .5
+      });
+
+    gsap.from(".projects-right1",  {
+        scrollTrigger: ".projects-right1",
+        x: 40,
+        opacity: 0,
+        duration: 1,
+        ease:"Back.easeOut",
+        stagger: .5
+      });
+
+      gsap.from(".projects-left2",  {
+          scrollTrigger: ".projects-left2",
+          x: -40,
+          opacity: 0,
+          duration: 1,
+          ease:"Back.easeOut",
+          stagger: .5
+        });
+
+      gsap.from(".projects-right2",  {
+          scrollTrigger: ".projects-right2",
+          x: 40,
+          opacity: 0,
+          duration: 1,
+          ease:"Back.easeOut",
+          stagger: .5
+        });
+
+
+
+// Contact Me Animations
+gsap.from(".contact-title",  {
+    scrollTrigger: ".contact-title",
+    y: -40,
+    opacity: 0,
+    duration: 1,
+    ease:"power1.out"
+});
+gsap.from(".contact-animation", {
+    scrollTrigger: ".contact-animation",
+    x: -40,
+    opacity: 0,
+    duration: .5,
+    ease:"power1.out",
+    stagger:0.2
+});
+
+
+
+
+
 
 
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ OPTIMIZATION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

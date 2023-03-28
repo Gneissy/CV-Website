@@ -47,7 +47,7 @@
       </ul>
     </div>
     <button id = "dark-mode-toggle" class = "dark-mode-toggle">
-      <img class = "dark-mode-toggle-image" src="./images/dark-theme.svg" alt="dark theme toggle menu">
+      <img class = "dark-mode-toggle-image" src="./images/dark-theme-toggle-image.png" alt="dark theme toggle menu">
     </button>
   </section>
 
@@ -63,7 +63,7 @@
   <section id="about-me" class="flex-box-row-centered">
     <div class="container flex-box-row-centered">
       <div class="container-about-me flex-box-column-centered">
-        <h1 class="about-me-title main-color-theme">About Me</h1>
+        <h1 class="about-me-title main-color-theme split">About Me</h1>
         <div class="row">
           <div class="about-me-content-wrapper flex-box-column col-lg-6 col-md-12 col-sm-12">
             <p class="about-me-content">As a mining engineer, before running into my dreams i had been ...</p>
@@ -90,13 +90,13 @@
         <div class="skills-buttons-div flex-box-column-centered col-lg-6 col-md-12 col-sm-12">
           <div class="skill-img-wrapper">
             <div class="skill-img__ind-wrapper">
-              <div class="skill-img__top-div skill-img__div hoverable-div"></div>
+              <div class="skill-img__top-div skill-img__div hoverable-div"> Front End </div>
             </div>
             <div class="skill-img__ind-wrapper">
-              <div class="skill-img__mid-div skill-img__div hoverable-div"></div>
+              <div class="skill-img__mid-div skill-img__div hoverable-div"> Tools </div>
             </div>
             <div class="skill-img__ind-wrapper">
-              <div class="skill-img__bottom-div skill-img__div hoverable-div"></div>
+              <div class="skill-img__bottom-div skill-img__div hoverable-div"> Back End </div>
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@
     <h2 class="projects-title main-color-theme">PROJECTS</h2>
     <div class="individual-project container">
       <div class="row">
-        <div class="projects-left-container flex-box-column col-lg-6 col-md-12 col-sm-12">
+        <div class="projects-left-container flex-box-column projects-left1 col-lg-6 col-md-12 col-sm-12">
           <div class="row project-name--stack-box flex-box-row-centered">
             <div class="project-name-box flex-box-row">
               <p class="project-name">Lost Ark Craft</p>
@@ -221,11 +221,11 @@
             <p class="project-detail">The idea here is to create a public calculation form that doesn't require everyone to do it all over again.</p>
           </div>
           <div class="project-extra-info-box">
-            <p class="project-extra-info">App is hosted via <a href="https://render.com/" target="_blank">render</a>, so it may last around 10-20s for page to load.</p>
+            <p class="project-extra-info ">App is hosted via <a class = "project-extra-info-link" href="https://render.com/" target="_blank">render</a>, so it may last around 10-20s for page to load.</p>
           </div>
 
         </div>
-        <div class="projects-right-container flex-box-column-centered col-lg-6 col-md-12 col-sm-12">
+        <div class="projects-right-container flex-box-column-centered projects-right1 col-lg-6 col-md-12 col-sm-12">
           <div class="project-video-box flex-box-row-centered">
             <div class="project-video">
               <iframe width="426" height="240" src="https://www.youtube.com/embed/Y3FNXwhNZr0" title="Swords and Sandals Yell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -241,7 +241,7 @@
     </div>
     <div class="individual-project container">
       <div class="row">
-        <div class="projects-right-container flex-box-column-centered col-lg-6 col-md-12 col-sm-12">
+        <div class="projects-right-container flex-box-column-centered projects-left2 col-lg-6 col-md-12 col-sm-12">
           <div class="project-video-box flex-box-row-centered">
             <div class="project-video">
               <iframe width="426" height="240" src="https://www.youtube.com/embed/Y3FNXwhNZr0" title="Swords and Sandals Yell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -253,7 +253,7 @@
             <a class="project-redirect-button main-color-theme" href="https://github.com/Gneissy/LostArkCraft" target="_blank">Source Code</button></a>
           </div>
         </div>
-        <div class="projects-left-container flex-box-column col-lg-6 col-md-12 col-sm-12">
+        <div class="projects-left-container flex-box-column projects-right2 col-lg-6 col-md-12 col-sm-12">
           <div class="row project-name--stack-box flex-box-row-centered">
             <div class="project-name-box flex-box-row">
               <p class="project-name">Lost Ark Craft</p>
@@ -269,7 +269,7 @@
               </div>
               <div class="project-stack-icon-div">
                 <img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img">
-                
+
               </div>
             </div>
           </div>
@@ -279,7 +279,7 @@
             <p class="project-detail">The idea here is to create a public calculation form that doesn't require everyone to do it all over again.</p>
           </div>
           <div class="project-extra-info-box">
-            <p class="project-extra-info">App is hosted via <a href="https://render.com/" target="_blank">render</a>, so it may last around 10-20s for page to load.</p>
+            <p class="project-extra-info">App is hosted via <a class = "project-extra-info-link" href="https://render.com/" target="_blank">render</a>, so it may last around 10-20s for page to load.</p>
           </div>
         </div>
       </div>
@@ -293,15 +293,15 @@
     <div class="contact-wrapper flex-box-column-centered">
       <h3 class="contact-title main-color-theme">Contact Me</h3>
       <form id="contact-form" class="flex-box-column" action="https://formspree.io/f/mzbqaadk" method="post">
-        <div class="input-container">
+        <div class="input-container contact-animation">
           <input type="text" name="name" required>
           <label>Your Name</label>
         </div>
-        <div class="input-container">
+        <div class="input-container contact-animation">
           <input type="email" name="email" required>
           <label>Email</label>
         </div>
-        <div class="input-container">
+        <div class="input-container contact-animation">
           <textarea type="textarea" name="message" required></textarea>
           <label>Message</label>
         </div>
