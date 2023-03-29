@@ -16,7 +16,11 @@ p { margin: 0; padding: 0; }
   font-style: italic;
 }
 
-
+ /* In order to fix the issue about overflowing right gap*/
+body, html{
+  width: 100svw;
+  overflow-x: hidden;
+}
 /* Light mode */
 body{
   background-color: lightpink;
@@ -595,6 +599,7 @@ ul:hover li a:not(:hover) {
 @media (max-width: 480px){
   .hero-title{
     font-size: 2rem;
+    text-align: center;
   }
   .hero-little-title{
     font-size: 1.5rem;
