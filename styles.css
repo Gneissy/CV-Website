@@ -1,6 +1,6 @@
 
 body {font-family: Montserrat, sans-serif; padding: 0; margin: 0;}
-section { margin-top: -10px; /* To fix section gap */}
+section { margin: 0; padding: 0; margin-top: -10px; /* To fix section gap */}
 p { margin: 0; padding: 0; }
 
 
@@ -16,6 +16,29 @@ p { margin: 0; padding: 0; }
   font-style: italic;
 }
 
+
+/* Light mode */
+body{
+  background-color: lightpink;
+}
+#hero{
+  background-color: lightblue;
+}
+#about-me{
+  background-color: #FFDEB4;
+}
+#skills{
+  background-color: lightgreen;
+}
+#projects{
+  background-color: lightyellow;
+}
+#contact-me{}
+#footer{}
+
+
+
+/* Darkmode */
 .darkmode-body{
   background-color: #0d1117;
   color: #f0f0f0;
@@ -287,7 +310,10 @@ input:-webkit-autofill {
 .submit-btn-box { /* Doesnt have additional style yet */ }
 .submit-btn {
   width: 30%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
   font-size: 26px;
   font-weight: 700;
   text-decoration: none;
@@ -475,7 +501,8 @@ a {
 /* Refactored 10:49  26.03.2023 */
 /* |------------------  Main title  ------------------| */
 #hero .container {
-  margin-left: 15%;
+  /* margin-left: 15%; */
+  align-items: flex-end;
   height: 100svh; /* Full screen height */
 }
 .container-title { margin-top: 25%; }
@@ -526,6 +553,9 @@ ul:hover li a:not(:hover) {
     flex-direction: column;
     align-items: flex-end;
   }
+  /* #hero .container{
+
+  } */
   #hero nav{
     position: absolute;
     top: 0;
@@ -549,7 +579,6 @@ ul:hover li a:not(:hover) {
   }
   #hero{ display: flex; justify-content: center; width: 100%; }
   #hero .container{
-    width: 100%;
     align-items: center;
     justify-content: center;
     margin-left: 0;
@@ -573,19 +602,16 @@ ul:hover li a:not(:hover) {
   #hero ul{
     gap: 48px;
   }
+  #hero nav a{
+    width: 3rem;
+    height: 3rem;
+  }
 }
-
-
-
 
 @media (max-width: 360px){
   .hero-little-title{
     font-size: 1rem;
   }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
 }
 
 
@@ -598,21 +624,6 @@ ul:hover li a:not(:hover) {
   .small-screen-adjust-text{ font-size: 24px; }
 }
 
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
 
 
 
@@ -621,22 +632,6 @@ ul:hover li a:not(:hover) {
 /* |------------------ Media Breakpoints for #skills ------------------| */
 
 @media (max-width: 771px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
   .small-screen-adjust-text{ font-size: 24px; }
 }
 
@@ -650,45 +645,12 @@ ul:hover li a:not(:hover) {
   .small-screen-adjust-text{ font-size: 24px; }
 }
 
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-
 
 
 
 /* |------------------ Media Breakpoints for #contact-me ------------------| */
 
 @media (max-width: 771px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
   .small-screen-adjust-text{ font-size: 24px; }
 }
 
@@ -699,21 +661,5 @@ ul:hover li a:not(:hover) {
 /* |------------------ Media Breakpoints for .footer ------------------| */
 
 @media (max-width: 771px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
-  .small-screen-adjust-text{ font-size: 24px; }
-}
-
-@media (max-width: 500px){
   .small-screen-adjust-text{ font-size: 24px; }
 }
