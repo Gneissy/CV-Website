@@ -9,14 +9,14 @@ gsap.registerPlugin(ScrollTrigger); // Activating ScrollTrigger
 
 
 
-
-window.addEventListener("DOMContentLoaded",function() {
-    setTimeout(function(){
-        // This hides the address bar:
-        window.scrollTo(0, 1);
-        window.innerHeight += 1;
-    }, 0);
-});
+// DOESNT WORK // Hiding browser's address bar 
+// window.addEventListener("DOMContentLoaded",function() {
+//     setTimeout(function(){
+//         // This hides the address bar:
+//         window.scrollTo(0, 1);
+//         window.innerHeight += 1;
+//     }, 0);
+// });
 
 
 
