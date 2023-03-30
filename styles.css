@@ -573,16 +573,18 @@ ul:hover li a:not(:hover) {
 
 /* |------------------ Media Breakpoints for #skills ------------------| */
 
+@media (max-width: 1295px){
+  .skill-text{ font-size: .8rem; padding: 0; margin: 0;}
+  .skill-box{ width: 75px; height: 100px; }
+}
 @media (max-width: 991px){
   .justify-center{
     justify-content: flex-start !important;
     text-align: center;
   }
 }
-@media (max-width: 649px){
-  .skill-text{ font-size: .8rem; padding: 0; margin: 0;}
-  .skill-box{ width: 75px; height: 100px; }
-}
+
+
 
 
 /* |------------------ Media Breakpoints for #projects ------------------| */
