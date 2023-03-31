@@ -408,9 +408,11 @@ h5.skills-text{ font-style: italic; }
 .about-me-image-wrapper { /* flex-box-row-centered */}
 .about-me-img-container { /* flex-box-row-centered */}
 .about-me-img {
+  border-radius: 100%;
+  /* border: 1px solid rgba(187, 135, 30, .3); */
   background-size: contain;
-  width: 200px;
-  height: 300px;
+  width: 75%;
+  height: 90%;
 }
 .about-me-content-wrapper { justify-content: flex-end; }
 .about-me-content{
