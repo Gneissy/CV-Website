@@ -68,12 +68,6 @@ darkModeToggle.addEventListener("click", function() {
 
 
 
-
-
-
-
-
-
 // @@@@@@@@@@ Fetching contact mails @@@@@@@@@@
 
 const form = document.getElementById("contact-form");

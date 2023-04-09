@@ -6,16 +6,6 @@ p { margin: 0; padding: 0; }
 body, html{ width: 100svw; overflow-x: hidden; }
 
 
-/* @@@@@@@@@@ Lightmode @@@@@@@@@@ */
-/* #hero{ background: linear-gradient(to bottom, #fff, #dae2f8); }
-#about-me{ background: linear-gradient(to bottom, #dae2f8, rgba(100, 235, 208, .5)); }
-#skills{ background: linear-gradient(to bottom, rgba(100, 235, 208, .5), #dae2f8); }
-#projects{ background: linear-gradient(to bottom, #dae2f8, #fff); }
-#contact-me{ }
-#footer{ } */
-
-
-
 /* @@@@@@@@@@ Darkmode @@@@@@@@@@ */
 .darkmode-body{ background-color: #0d1117 !important; color: #f0f0f0; }
 .darkmode-hero{
@@ -84,16 +74,7 @@ body, html{ width: 100svw; overflow-x: hidden; }
   justify-content: center;
   align-items: center;
 }
-.main-color-theme{
-  color: #67cae1 ;
-  /* #BB871E bu da güzel turuncu */
-  /* #DEA01E inanılmaz güzel gidiyor */
-  /* color: #167298 !important; yedek */
-  /* color: #2dc9fc !important yedek; */
-  /* color: #89d0f0 !important hover not; */
-  /* color: #67cae1 !important güzel açık mavi; */
-  /* #DBF2FF tüm text için güzel olabilir */
-}
+.main-color-theme{ color: #67cae1 ; }
 
 
 
@@ -140,8 +121,12 @@ body, html{ width: 100svw; overflow-x: hidden; }
   height: 80px;
   padding: 8px;
 }
+.project-stack-icon{
+  width: 48px;
+  height: 48px;
+}
 .project-details-box {} /* Not styled yet */
-.project-detail { margin-bottom: 5%; }
+.project-detail { margin-bottom: 5%; font-size: 1.1rem; text-align: center;}
 .project-extra-info-box {} /* Not styled yet */
 .project-extra-info {} /* Not styled yet */
 .project-extra-info-link { color: #67cae1 !important; text-decoration: none; }
@@ -349,7 +334,7 @@ input:-webkit-autofill {
   align-content: center;
 }
 .skills-info { flex-wrap: wrap; }
-.skill-text { text-align: center; font-size: 1rem; }
+.skill-text { text-align: center; font-size: .8rem; padding: 0; margin: 0; }
 h5.skills-text{ font-style: italic; }
 .frontend-text,
 .additional-text,
@@ -367,9 +352,9 @@ h5.skills-text{ font-style: italic; }
   flex-wrap: wrap;
 }
 .skill-box {
+  width: 90px;
+  height: 120px;
   opacity: .2;
-  width: 150px;
-  height: 150px;
   padding: 16px;
   transition: opacity 1s ease;
 }
@@ -385,6 +370,32 @@ h5.skills-text{ font-style: italic; }
   /* Will be removed on hover any div, see .skills-container */
   justify-content: center !important;
 }
+
+/* Couldn't do it for img[alt] for some reason */
+a[data-tool-tip]{
+  position: relative;
+}
+a[data-tool-tip]::after{
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: rgba(103, 202, 225, 0.1);
+  padding: 1em 2em;
+  color: white;
+  border-radius: 10px;
+  font-size: .8rem;
+  bottom: 0;
+  left: 0;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: all .1s ease-out;
+}
+a[data-tool-tip]:hover::after{
+  transform: scale(1);
+  bottom: 100%;
+  left: 0%;
+}
+
 
 
 
@@ -567,6 +578,11 @@ ul:hover li a:not(:hover) {
 @media (max-width: 991px){
   .about-me-content{ font-size: 1.2rem; }
 }
+@media (max-width: 767px) {
+  #about-me {
+    padding-bottom: 20%;
+  }
+}
 @media (max-width: 420px){
   #about-me .container {width: 90%;}
   .about-me-content{ font-size: 1rem; }
@@ -585,7 +601,11 @@ ul:hover li a:not(:hover) {
     text-align: center;
   }
 }
-
+@media (max-width: 767px) {
+  #skills .container{
+    padding-bottom: 10%;
+  }
+}
 
 
 
