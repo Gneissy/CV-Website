@@ -24,6 +24,7 @@ const enableDarkMode = function() {
   $("#projects").addClass("darkmode-projects");
   $("#contact-me").addClass("darkmode-contact-me");
   $("#footer").addClass("darkmode-footer");
+  $("a").addClass("darkmode-data-tool-tip");
 
   // Update dark mode preference in local storage
   localStorage.setItem("darkMode", "enabled");
@@ -39,6 +40,7 @@ const disableDarkMode = function() {
   $("#projects").removeClass("darkmode-projects");
   $("#contact-me").removeClass("darkmode-contact-me");
   $("#footer").removeClass("darkmode-footer");
+  $("a").removeClass("darkmode-data-tool-tip");
 
   // Update dark mode preference in local storage
   localStorage.setItem("darkMode", null);
