@@ -6,6 +6,12 @@ gsap.registerPlugin(ScrollTrigger); // Activating ScrollTrigger
 // This property is all stored locally, no server related, biggest difference from cookies.
 let darkMode = localStorage.getItem("darkMode");
 
+// If there is no other choices, run dark mode as default
+if (darkMode === null){
+  darkMode = "enabled";
+  localStorage.setItem("darkMode", darkMode);
+}
+
 // This is the button that user interact in order to change the theme.
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
