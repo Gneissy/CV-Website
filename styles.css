@@ -373,11 +373,12 @@ h5.skills-text{ font-style: italic; }
   justify-content: center !important;
 }
 
+/* Showing details on hover for project stack icons*/
 /* Couldn't do it for img[alt] for some reason */
-a[data-tool-tip]{
+a[data-tool-tip].show-detail{
   position: relative;
 }
-a[data-tool-tip]::after{
+a[data-tool-tip].show-detail::after{
   content: attr(data-tool-tip);
   display: block;
   position: absolute;
@@ -392,12 +393,34 @@ a[data-tool-tip]::after{
   transform: scale(0);
   transition: all .1s ease-out;
 }
-a[data-tool-tip]:hover::after{
+a[data-tool-tip].show-detail:hover::after{
   transform: scale(1);
   bottom: 100%;
   left: 0%;
 }
 
+/* Showing details on hover for Resume*/
+a[data-tool-tip].resume{
+  position: relative;
+}
+a[data-tool-tip].resume::after{
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: rgba(103, 202, 225, 1);
+  padding: 1em 2em;
+  color: white;
+  border-radius: 10px;
+  font-size: .8rem;
+  top: 0;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: all .1s ease-out;
+}
+a[data-tool-tip].resume:hover::after{
+  transform: scale(1);
+  top: 100%;
+}
 
 
 
