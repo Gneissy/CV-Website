@@ -455,6 +455,9 @@ a[data-tool-tip].resume:hover::after{
   font-size: 1.1rem;
   padding: 3% 0 3%;
 }
+.see-resume-div{
+  padding: 2% 0;
+}
 
 
 
