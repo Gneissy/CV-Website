@@ -6,6 +6,8 @@ p { margin: 0; padding: 0; }
 body, html{ width: 100svw; overflow-x: hidden; }
 
 
+
+
 /* @@@@@@@@@@ Darkmode @@@@@@@@@@ */
 .darkmode-body{ background-color: #0d1117 !important; color: #f0f0f0; }
 .darkmode-hero{
@@ -79,6 +81,31 @@ body, html{ width: 100svw; overflow-x: hidden; }
 .main-color-theme{ color: #67cae1 ; }
 
 
+
+/* @@@@@@@@@@ Scrollbar Related @@@@@@@@@@ */
+::-webkit-scrollbar {
+  width: .5rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: .5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #67cae1;
+  border: .1rem transparent solid;
+  border-radius: 100svw;
+  transition: all 1s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #097CB8;
+}
+
+/* In case it's not supported (like maybe in Firefox) */
+@supports (scrollbar-color: #67cae1 transparent){
+  * {
+    scrollbar-color: #67cae1 transparent;
+  }
+}
 
 
 
