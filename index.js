@@ -31,6 +31,7 @@ const enableDarkMode = function() {
   $("#contact-me").addClass("darkmode-contact-me");
   $("#footer").addClass("darkmode-footer");
   $("a").addClass("darkmode-data-tool-tip");
+  $(".hoverable-div").addClass("darkmode-hoverable-div");
 
   // Update dark mode preference in local storage
   localStorage.setItem("darkMode", "enabled");
@@ -47,6 +48,8 @@ const disableDarkMode = function() {
   $("#contact-me").removeClass("darkmode-contact-me");
   $("#footer").removeClass("darkmode-footer");
   $("a").removeClass("darkmode-data-tool-tip");
+  $(".hoverable-div").removeClass("darkmode-hoverable-div");
+
 
   // Update dark mode preference in local storage
   localStorage.setItem("darkMode", null);
@@ -383,43 +386,3 @@ gsap.from(".contact-animation", {
   stagger: 0.2
 });
 
-
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ OPTIMIZATION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-// Can be done like Left-to-right animations, right to left etc.
-// Following example is for right to left.
-
-// const stackFields = [
-//   {
-//     selector: ".frontend-text",
-//     trigger: ".skill-img__top-div",
-//   },
-//   {
-//     selector: ".additional-text",
-//     trigger: ".skill-img__mid-div",
-//   },
-//   {
-//     selector: ".backend-text",
-//     trigger: ".skill-img__bottom-div",
-//   },
-// ];
-//
-// function animateStackField({selector, trigger}) {
-//   return gsap.from(selector, {
-//     scrollTrigger: {
-//       trigger,
-//     },
-//     x: 40,
-//     opacity: 0,
-//     duration: 0.5,
-//     ease: "power1.out",
-//   });
-// }
-//
-// const skillsStackTextAnimations = stackFields.map(animateStackField);
-//
-// skillsStackTextAnimations.forEach((animation, i) => {
-//   const trigger = stackFields[i].trigger;
-//   $(trigger).hover(() => {
-//     animation.restart();
-//   });
-// });

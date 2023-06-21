@@ -5,7 +5,8 @@ p { margin: 0; padding: 0; }
  /* In order to fix the issue about overflowing right gap*/
 body, html{ width: 100svw; overflow-x: hidden; }
 
-
+/*! This might be considered as bad practise, but i have full control here: */
+body{ transition: .2s ease-out; }
 
 
 /* @@@@@@@@@@ Darkmode @@@@@@@@@@ */
@@ -58,6 +59,9 @@ body, html{ width: 100svw; overflow-x: hidden; }
 }
 .darkmode-data-tool-tip::after{
   background-color: rgba(103, 202, 225, 0.1) !important;
+}
+.darkmode-hoverable-div{
+  color: #DEA01E !important;
 }
 
 
@@ -136,6 +140,7 @@ body, html{ width: 100svw; overflow-x: hidden; }
 .project-name {
   font-size: 2.5rem;
   font-weight: 700;
+  text-align: center;
 }
 .project-stack-box {
   margin-top: 3%;
@@ -207,7 +212,8 @@ footer .container {
 }
 footer .footer-links { justify-content: space-evenly; }
 footer div a { transition: transform .25s ease-out; }
-footer div a:hover { transform: scale(1.3); }
+footer div a i { transition: color .25s ease-out; }
+footer div a:hover { transform: scale(1.1); }
 .footer-contact-nav { color: #c7f2ff; }
 .footer-contact-nav:hover { color: #097CB8; }
 footer .footer-text-box {
@@ -334,7 +340,7 @@ input:-webkit-autofill {
 .skills-buttons-div {/* flex-box-column-centered */}
 .skill-img-wrapper{/* not styled yet */}
 .hoverable-div {
-  color: #DEA01E;
+  color: #812B00;
   font-size: 1.5rem;
   font-weight: 700;
   width: 150px;
@@ -342,12 +348,38 @@ input:-webkit-autofill {
   opacity: 0.5;
   transition: all 0.5s ease-out;
 }
+/* 2nd seconds are for delay */
+.hoverable-div1{ animation: blink 6s infinite 2s; }
+.hoverable-div2{ animation: blink 6s infinite 4s; }
+.hoverable-div3{ animation: blink 6s infinite 6s; }
+@keyframes blink{
+  0%, 20%{ 
+    opacity: .5;
+    transform: scale(1);
+  }
+  20%, 40%{ 
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  40%, 100%{ 
+    opacity: .5;
+    transform: scale(1);
+  }
+}
 .hoverable-div:hover {
   /* Hovered part of image */
   opacity: 1;
   transform: scale(1.05);
   cursor: pointer;
 }
+/* To stop the blinking animation when user hover over it. */
+.skills-buttons-div:hover .hoverable-div1,
+.skills-buttons-div:hover .hoverable-div2,
+.skills-buttons-div:hover .hoverable-div3{
+  animation: none;
+  /* animation-play-state: paused; */
+}
+
 .skills-buttons-div:hover .hoverable-div:not(:hover) {
   /* Remaining non-hovered parts */
   opacity: 0.2;
@@ -404,6 +436,7 @@ h5.skills-text{ font-style: italic; }
 /* Couldn't do it for img[alt] for some reason */
 a[data-tool-tip].show-detail{
   position: relative;
+  cursor: pointer;
 }
 a[data-tool-tip].show-detail::after{
   content: attr(data-tool-tip);
@@ -513,7 +546,7 @@ a {
 }
 #hero nav a:hover { transform: scale(1.1); }
 #hero nav a i { /* maybe color property*/ }
-#hero nav a i:hover { color: #097CB8; }
+/* #hero nav a i:hover { color: #097CB8; } */
 
 
 
@@ -539,7 +572,6 @@ a {
   font-weight: 400;
   font-style: italic;
 }
-
 
 
 

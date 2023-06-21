@@ -96,13 +96,13 @@
         <div class="skills-buttons-div flex-box-column-centered col-lg-6 col-md-12 col-sm-12">
           <div class="skill-img-wrapper">
             <div class="skill-img__ind-wrapper">
-              <div class="skill-img__top-div skill-img__div hoverable-div flex-box-row-centered"> Front End </div>
+              <div class="skill-img__top-div skill-img__div hoverable-div hoverable-div1 flex-box-row-centered"> Front End </div>
             </div>
             <div class="skill-img__ind-wrapper">
-              <div class="skill-img__mid-div skill-img__div hoverable-div flex-box-row-centered"> Back End </div>
+              <div class="skill-img__mid-div skill-img__div hoverable-div hoverable-div2 flex-box-row-centered"> Back End </div>
             </div>
             <div class="skill-img__ind-wrapper">
-              <div class="skill-img__bot-div skill-img__div hoverable-div flex-box-row-centered"> Additional </div>
+              <div class="skill-img__bot-div skill-img__div hoverable-div hoverable-div3 flex-box-row-centered"> Additional </div>
             </div>
           </div>
         </div>
@@ -137,6 +137,10 @@
                   <h4 class="skill-text">React</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered frontend">
+                  <img class="skill-img" src="./images/redux.png" alt="redux image">
+                  <h4 class="skill-text">Redux</h4>
+                </div>
+                <div class="skill-box flex-box-column-centered frontend">
                   <img class="skill-img" src="./images/jquery.png" alt="jQuery image">
                   <h4 class="skill-text">jQuery</h4>
                 </div>
@@ -159,10 +163,6 @@
                   <h4 class="skill-text">Github</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered additional">
-                  <img class="skill-img" src="./images/render.png" alt="render image">
-                  <h4 class="skill-text">Render</h4>
-                </div>
-                <div class="skill-box flex-box-column-centered additional">
                   <img class="skill-img" src="./images/atom-icon.png" alt="atom image">
                   <h4 class="skill-text">Atom</h4>
                 </div>
@@ -175,12 +175,20 @@
                   <h4 class="skill-text">Netlify</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered additional">
+                  <img class="skill-img" src="./images/render.png" alt="render image">
+                  <h4 class="skill-text">Render</h4>
+                </div>
+                <div class="skill-box flex-box-column-centered additional">
                   <img class="skill-img" src="./images/cyclic-icon.png" alt="cyclic image">
                   <h4 class="skill-text">Cyclic</h4>
                 </div>
                 <div class="skill-box flex-box-column-centered additional">
                   <img class="skill-img" src="./images/c++icon.png" alt="c++ image">
                   <h4 class="skill-text">C++</h4>
+                </div>
+                <div class="skill-box flex-box-column-centered additional">
+                  <img class="skill-img" src="./images/stripe-icon.png" alt="stripe image">
+                  <h4 class="skill-text">Stripe</h4>
                 </div>
               </div>
               <div class="skill-box--backend passive">
@@ -208,6 +216,10 @@
                   <img class="skill-img" src="./images/postman-icon.png" alt="postman image">
                   <h4 class="skill-text">Postman</h4>
                 </div>
+                <div class="skill-box flex-box-column-centered backend">
+                  <img class="skill-img" src="./images/jwt.png" alt="jwt image">
+                  <h4 class="skill-text">JWT</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -224,45 +236,58 @@
       flex-direction: row-reverse property on media breakpoint. -->
   <section id="projects">
     <h2 class="projects-title main-color-theme">PROJECTS</h2>
+
     <div class="individual-project container">
       <div class="row project--first">
         <div class="projects-left-container flex-box-column projects-left1 col-lg-6 col-md-12 col-sm-12">
           <div class="row project-name--stack-box flex-box-row-centered">
             <div class="project-name-box flex-box-row">
-              <p class="project-name">Lost Ark Craft</p>
+              <p class="project-name">Let Me Sell You Something</p>
             </div>
             <div class="project-stack-box flex-box-row-centered">
               <div class="project-stack-icon-div">
-                <a class = "show-detail" data-tool-tip="MongoDB"><img class="project-stack-icon" src="./images/mongodb.png" alt="mongodb-img"></a>
+                <a class = "show-detail" data-tool-tip="MongoDB"><img class="project-stack-icon" src="./images/mongodb.png" alt="mongodb img"></a>
               </div>
               <div class="project-stack-icon-div">
-                <a class = "show-detail" data-tool-tip="Express.js"><img class="project-stack-icon" src="./images/express-icon.png" alt="expressj-img"></a>
+                <a class = "show-detail" data-tool-tip="Express.js"><img class="project-stack-icon" src="./images/express-icon.png" alt="express img"></a>
               </div>
               <div class="project-stack-icon-div">
-                <a class = "show-detail" data-tool-tip="Node.js"><img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img"></a>
+                <a class = "show-detail" data-tool-tip="React.js"><img class="project-stack-icon" src="./images/react.png" alt="react img"></a>
+              </div>
+              <div class="project-stack-icon-div">
+                <a class = "show-detail" data-tool-tip="Node.js"><img class="project-stack-icon" src="./images/node-js.png" alt="nodejs img"></a>
+              </div>
+              <div class="project-stack-icon-div">
+                <a class = "show-detail" data-tool-tip="Redux & Redux Toolkit"><img class="project-stack-icon" src="./images/redux.png" alt="redux img"></a>
+              </div>
+              <div class="project-stack-icon-div">
+                <a class = "show-detail" data-tool-tip="Json Web Tokens"><img class="project-stack-icon" src="./images/jwt.png" alt="jwt img"></a>
+              </div>
+              <div class="project-stack-icon-div">
+                <a class = "show-detail" data-tool-tip="Stripe API"><img class="project-stack-icon" src="./images/stripe-icon.png" alt="stripe img"></a>
               </div>
             </div>
           </div>
           <div class="project-details-box">
-            <p class="project-detail">This app is used for maximizing the profit of crafting in the game Lost Ark.</p>
-            <p class="project-detail">The whole point is to track both Trade and Battle items' prices in order to calculate the most profitable battle item that can be crafted.</p>
-            <p class="project-detail">The idea here is to create a public calculation form that doesn't require everyone to do it all over again.</p>
+            <p class="project-detail">A functional e-commerce web app with a clean and user-friendly interface. It offers users the ability to browse through categories, purchase products, and manage their carts within an online store environment.</p>
+            <p class="project-detail">Note that showcased products in this app are for demonstration purposes only. The payment process is simulated, with no real transactions or charges.</p>
           </div>
           <div class="project-extra-info-box"></div>
         </div>
         <div class="projects-right-container flex-box-column-centered projects-right1 col-lg-6 col-md-12 col-sm-12">
           <div class="project-video-box flex-box-row-centered">
             <div class="project-video">
-              <iframe loading="lazy" width="420" height="240" src="https://www.youtube.com/embed/5V-ivasiF44?mute=1" title="Lost Ark Craft App Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe loading="lazy" width="420" height="240" src="https://www.youtube.com/embed/k4aAs5HG6Zs" title="Let Me Sell You Something App Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
           <div class="project-buttons-box flex-box-row">
-            <a class="project-redirect-button main-color-theme" aria-label="live-demo-buttom" href="https://lost-ark-craft.onrender.com/" target="_blank">Live Demo</button></a>
-            <a class="project-redirect-button main-color-theme" aria-label="source-code-button" href="https://github.com/Gneissy/LostArkCraft" target="_blank">Source Code</button></a>
+            <a class="project-redirect-button main-color-theme" aria-label="live-demo-buttom" href="https://letmesellyousomething.netlify.app/" target="_blank">Live Demo</button></a>
+            <a class="project-redirect-button main-color-theme" aria-label="source-code-button" href="https://github.com/Gneissy/let-me-sell-you-something" target="_blank">Source Code</button></a>
           </div>
         </div>
       </div>
     </div>
+
     <div class="individual-project container">
       <div class="row project--second">
         <div class="projects-right-container flex-box-column-centered projects-left2 col-lg-6 col-md-12 col-sm-12">
@@ -307,6 +332,47 @@
         </div>
       </div>
     </div>
+
+    <div class="individual-project container">
+      <div class="row project--first">
+        <div class="projects-left-container flex-box-column projects-left1 col-lg-6 col-md-12 col-sm-12">
+          <div class="row project-name--stack-box flex-box-row-centered">
+            <div class="project-name-box flex-box-row">
+              <p class="project-name">Lost Ark Craft</p>
+            </div>
+            <div class="project-stack-box flex-box-row-centered">
+              <div class="project-stack-icon-div">
+                <a class = "show-detail" data-tool-tip="MongoDB"><img class="project-stack-icon" src="./images/mongodb.png" alt="mongodb-img"></a>
+              </div>
+              <div class="project-stack-icon-div">
+                <a class = "show-detail" data-tool-tip="Express.js"><img class="project-stack-icon" src="./images/express-icon.png" alt="expressj-img"></a>
+              </div>
+              <div class="project-stack-icon-div">
+                <a class = "show-detail" data-tool-tip="Node.js"><img class="project-stack-icon" src="./images/node-js.png" alt="nodejs-img"></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-details-box">
+            <p class="project-detail">This app is used for maximizing the profit of crafting in the game Lost Ark.</p>
+            <p class="project-detail">The whole point is to track both Trade and Battle items' prices in order to calculate the most profitable battle item that can be crafted.</p>
+            <p class="project-detail">The idea here is to create a public calculation form that doesn't require everyone to do it all over again.</p>
+          </div>
+          <div class="project-extra-info-box"></div>
+        </div>
+        <div class="projects-right-container flex-box-column-centered projects-right1 col-lg-6 col-md-12 col-sm-12">
+          <div class="project-video-box flex-box-row-centered">
+            <div class="project-video">
+              <iframe loading="lazy" width="420" height="240" src="https://www.youtube.com/embed/5V-ivasiF44?mute=1" title="Lost Ark Craft App Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="project-buttons-box flex-box-row">
+            <a class="project-redirect-button main-color-theme" aria-label="live-demo-buttom" href="https://lost-ark-craft.onrender.com/" target="_blank">Live Demo</button></a>
+            <a class="project-redirect-button main-color-theme" aria-label="source-code-button" href="https://github.com/Gneissy/LostArkCraft" target="_blank">Source Code</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </div>
   </section>
 
