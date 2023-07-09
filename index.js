@@ -1,6 +1,17 @@
 gsap.registerPlugin(ScrollTrigger); // Activating ScrollTrigger
 
-// @@@@@@@@@@@@@@@@@@@@ Dark Mode @@@@@@@@@@@@@@@@@@@@
+
+
+// @@@@@@@@@@@@@@@@@@@@ Arrow Up Related @@@@@@@@@@@@@@@@@@@@
+window.addEventListener("scroll", function() {
+  let arrowContainer = document.querySelector(".arrow-up-container");
+  let currentScrollPosition = window.scrollY || window.pageYOffset;
+
+  if (currentScrollPosition >= 100) arrowContainer.classList.add("arrow-visible");
+  else arrowContainer.classList.remove("arrow-visible");
+});
+
+// @@@@@@@@@@@@@@@@@@@@ Dark Mode Related @@@@@@@@@@@@@@@@@@@@
 
 // This stores the info for the last choice of user, like cookies. No expiration.
 // This property is all stored locally, no server related, biggest difference from cookies.
@@ -11,7 +22,6 @@ if (darkMode === null){
   darkMode = "enabled";
   localStorage.setItem("darkMode", darkMode);
 }
-
 // This is the button that user interact in order to change the theme.
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
