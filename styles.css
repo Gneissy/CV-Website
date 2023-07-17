@@ -710,6 +710,8 @@ ul:hover li a:not(:hover) {
 }
 @media (max-width: 991px){
   .about-me-content{ font-size: 1.2rem; }
+  .about-me-wrapper{ flex-direction: column-reverse; }
+  .about-me-img-container{ margin: 1rem; }
 }
 @media (max-width: 767px) {
   #about-me {
@@ -733,12 +735,26 @@ ul:hover li a:not(:hover) {
     justify-content: flex-start !important;
     text-align: center;
   }
+  .skill-img-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
 }
 @media (max-width: 767px) {
   #skills .container{
     padding-bottom: 10%;
   }
 }
+@media (max-width: 551px) {
+  #skills .hoverable-div{
+    font-size: 1.1rem;
+    width: 100px;
+    height: 100px;
+    margin: .5rem;
+    text-align: center;
+  }
+}
+
 
 
 
