@@ -396,3 +396,26 @@ gsap.from(".contact-animation", {
   stagger: 0.2
 });
 
+
+// For Video Placeholder
+document.addEventListener("DOMContentLoaded", function () {
+  var videoContainers = document.querySelectorAll('.project-video-container');
+
+  videoContainers.forEach(function (container) {
+    container.addEventListener('click', function () {
+      var videoUrl = container.parentElement.getAttribute('data-video-url');
+      var iframe = document.createElement('iframe');
+      iframe.src = videoUrl;
+      iframe.width = "420";
+      iframe.height = "240";
+      iframe.title = "Video";
+      iframe.frameBorder = "0";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      iframe.mute = 1;
+
+      container.parentElement.querySelector('.video-placeholder').appendChild(iframe);
+      container.style.display = 'none'; // Hide the thumbnail container after the video is loaded
+    });
+  });
+});

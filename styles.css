@@ -77,7 +77,6 @@ body{ transition: .2s ease-out; }
   background: rgb(13,17,23);
   background: linear-gradient(180deg,rgba(15, 60, 75, .7) 0%, rgba(13, 17, 23, 1) 100%) !important;
 }
-.darkmode-footer{ }
 .turn-toggle-img{ transform: rotate(180deg); }
 .darkmode-form{ color: #f0f0f0; }
 #dark-mode-toggle{
@@ -157,6 +156,30 @@ body{ transition: .2s ease-out; }
   }
 }
 
+/* For Video Placeholders*/
+.video-thumbnail {
+  cursor: pointer;
+  width: 420px;
+  height: 240px;
+  opacity: .4;
+}
+.project-video-container{
+  position: relative;
+}
+.video-cta{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 
 
 /* Refactored 10.26  25.03.2023*/
@@ -205,10 +228,7 @@ body{ transition: .2s ease-out; }
   width: 48px;
   height: 48px;
 }
-.project-details-box {} /* Not styled yet */
 .project-detail { margin-bottom: 5%; font-size: 1.1rem; text-align: center;}
-.project-extra-info-box {} /* Not styled yet */
-.project-extra-info {} /* Not styled yet */
 .project-extra-info-link { color: #67cae1 !important; text-decoration: none; }
 .project-extra-info-link:hover{ color: #097CB8 !important; }
 .project-buttons-box {
@@ -233,9 +253,6 @@ body{ transition: .2s ease-out; }
 
 
 /* @@@ Right Container @@@ */
-.projects-right-container {
-  /* justify-content: center; /* Flex-end better maybe */ */
-}
 .project-video-box { padding: 10%; }
 .project-video {
   max-width: 100%;
@@ -282,7 +299,6 @@ footer .footer-text-box {
 /* Refactored 10:16  26.03.2023 */
 /* |------------------ Contact Me Section  ------------------| */
 #contact-me { padding: 5svh 0 5svh; }
-#contact-me .contact-wrapper { }
 .contact-title {
   text-align: center;
   font-size: 3rem;
@@ -336,7 +352,6 @@ input:-webkit-autofill {
   /* To get rid of autocomplete input background color */
   -webkit-background-clip: text;
 }
-.submit-btn-box { /* Doesnt have additional style yet */ }
 .submit-btn {
   width: 30%;
   display: flex;
@@ -383,8 +398,6 @@ input:-webkit-autofill {
   font-size: 3rem;
   font-weight: 700;
 }
-.skills-buttons-div {/* flex-box-column-centered */}
-.skill-img-wrapper{/* not styled yet */}
 .hoverable-div {
   color: #812B00;
   font-size: 1.5rem;
@@ -431,7 +444,6 @@ input:-webkit-autofill {
   opacity: 0.2;
   filter: blur(1px);
 }
-.skills-showcase-div {/* flex-box-column-centered */}
 .skills-container {
   min-height: 600px;
   gap: 70px;
@@ -536,19 +548,15 @@ a[data-tool-tip].resume:hover::after{
 /* |------------------ About Me Section  ------------------| */
 #about-me {
   padding: 5svh 0 10svh;
-  min-height: /* 80svh; */
-  /* clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%); */
+  /* min-height: 80svh; */
 }
 #about-me .container { width: 40%; }
-.container-about-me { /*flex-box-column-centered*/ }
 .about-me-title {
   margin: 3%;
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
 }
-.about-me-image-wrapper { /* flex-box-row-centered */}
-.about-me-img-container { /* flex-box-row-centered */}
 .about-me-img {
   border-radius: 100%;
   /* border: 1px solid rgba(187, 135, 30, .3); */
@@ -591,8 +599,6 @@ a {
   transition: all .2s ease-in;
 }
 #hero nav a:hover { transform: scale(1.1); }
-#hero nav a i { /* maybe color property*/ }
-/* #hero nav a i:hover { color: #097CB8; } */
 
 
 
@@ -612,7 +618,6 @@ a {
   font-weight: 700;
   margin-bottom: 3.2rem;
 }
-.title-content { /* No additional styling yet */}
 .hero-little-title{
   font-size: 2rem;
   font-weight: 400;
