@@ -544,6 +544,35 @@ a[data-tool-tip].resume:hover::after{
 
 
 
+div[data-tool-tip].show-detail{
+    position: relative;
+    cursor: pointer;
+}
+div[data-tool-tip].show-detail::after{
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: rgba(103, 202, 225, 1);
+  padding: 1em 2em;
+  color: white;
+  border-radius: 10px;
+  font-size: .8rem;
+  bottom: 0;
+  left: 0;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: all .1s ease-out;
+}
+div[data-tool-tip].show-detail:hover::after{
+  transform: scale(1);
+  bottom: 100%;
+  left: 0%;
+}
+  
+
+
+
+
 
 
 /* Refactored 10:40  26.03.2023 */

@@ -41,6 +41,7 @@ const enableDarkMode = function() {
   $("#contact-me").addClass("darkmode-contact-me");
   $("#footer").addClass("darkmode-footer");
   $("a").addClass("darkmode-data-tool-tip");
+  $("div").addClass("darkmode-data-tool-tip");
   $(".hoverable-div").addClass("darkmode-hoverable-div");
 
   // Update dark mode preference in local storage
@@ -58,6 +59,7 @@ const disableDarkMode = function() {
   $("#contact-me").removeClass("darkmode-contact-me");
   $("#footer").removeClass("darkmode-footer");
   $("a").removeClass("darkmode-data-tool-tip");
+  $("div").removeClass("darkmode-data-tool-tip");
   $(".hoverable-div").removeClass("darkmode-hoverable-div");
 
 
