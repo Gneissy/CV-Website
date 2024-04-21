@@ -131,6 +131,7 @@ body{ transition: .2s ease-out; }
 
 
 
+
 /* @@@@@@@@@@ Scrollbar Related @@@@@@@@@@ */
 ::-webkit-scrollbar {
   width: .5rem;
@@ -196,7 +197,11 @@ body{ transition: .2s ease-out; }
   font-weight: 700;
 }
 .project--first,
-.project--second{ padding: 3svh 0 3svh; }
+.project--second{ 
+    padding: 3svh 0 3svh; 
+    border-bottom: 1px solid #67cae1;
+    
+}
 
 /* @@@ Left container @@@ */
 .projects-left-container {
