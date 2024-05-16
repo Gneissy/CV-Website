@@ -246,6 +246,7 @@ body {
 }
 #projects .container {
     width: 65%;
+    margin-bottom: 2rem;
 }
 .projects-title {
     text-align: center;
@@ -481,7 +482,7 @@ input:-webkit-autofill {
     padding: 5svh 0 3svh;
 }
 #skills .container {
-    width: 50%;
+    width: 60%;
 }
 #skills .container h1 {
     text-align: center;
@@ -533,6 +534,7 @@ input:-webkit-autofill {
     transform: scale(1.05);
     cursor: pointer;
 }
+
 /* To stop the blinking animation when user hover over it. */
 .skills-buttons-div:hover .hoverable-div1,
 .skills-buttons-div:hover .hoverable-div2,
@@ -553,6 +555,12 @@ input:-webkit-autofill {
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
+}
+.skills-buttons-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .skills-info {
     flex-wrap: wrap;
@@ -913,6 +921,9 @@ ul:hover li a:not(:hover) {
     .skill-img-wrapper {
         display: flex;
         flex-direction: row;
+    }
+    #skills .container {
+        width: 90%;
     }
 }
 @media (max-width: 767px) {
